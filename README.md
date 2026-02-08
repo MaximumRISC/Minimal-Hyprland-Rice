@@ -1,8 +1,9 @@
-# 🧑‍💻 Dotfiles
+# 🧑‍💻 Minimal Hyprland Rice
 
-Personal Linux environment configuration based on **Hyprland**, focused on a clean, minimal and reproducible setup.
+Personal Linux environment configuration based on **Hyprland**, focused on a **clean, minimal and reproducible** setup.
 
-This repository contains **only real configuration files (dotfiles)**.
+This repository contains only **real configuration files (dotfiles)**.
+No generated files, no cache, no runtime data.
 
 ---
 
@@ -10,29 +11,24 @@ This repository contains **only real configuration files (dotfiles)**.
 
 Only the following components are versioned:
 
-* `fastfetch` → system info
-* `ghostty` → terminal
-* `nvim` → Neovim config
-* `kitty` → terminal
-* `rofi` → launcher
-* `hypr` → Hyprland (Wayland compositor)
-* `waybar` → status bar
-* `mako` → notifications
+* **hypr** → Hyprland (Wayland compositor)
+* **waybar** → status bar
+* **kitty** → terminal
+* **rofi** → launcher
+* **mako** → notifications
 
 ---
 
 ## 🧱 Repository structure
 
 ```txt
-Dotfiles/
-├── fastfetch/
-├── ghostty/
-├── nvim/
-├── kitty/
-├── rofi/
+Minimal-Hyprland-Rice/
 ├── hypr/
-├── waybar/
+├── kitty/
 ├── mako/
+├── rofi/
+├── waybar/
+├── LICENSE
 ├── .gitignore
 └── README.md
 ```
@@ -43,20 +39,17 @@ Dotfiles/
 
 ```bash
 cd ~
-git clone git@github.com:MaximumRISC/Dotfiles.git
+git clone git@github.com:MaximumRISC/Minimal-Hyprland-Rice.git
 ```
 
 Then link the configs you want:
 
 ```bash
-ln -s ~/Dotfiles/nvim ~/.config/nvim
-ln -s ~/Dotfiles/kitty ~/.config/kitty
-ln -s ~/Dotfiles/rofi ~/.config/rofi
-ln -s ~/Dotfiles/hypr ~/.config/hypr
-ln -s ~/Dotfiles/waybar ~/.config/waybar
-ln -s ~/Dotfiles/mako ~/.config/mako
-ln -s ~/Dotfiles/fastfetch ~/.config/fastfetch
-ln -s ~/Dotfiles/ghostty ~/.config/ghostty
+ln -s ~/Minimal-Hyprland-Rice/hypr ~/.config/hypr
+ln -s ~/Minimal-Hyprland-Rice/waybar ~/.config/waybar
+ln -s ~/Minimal-Hyprland-Rice/kitty ~/.config/kitty
+ln -s ~/Minimal-Hyprland-Rice/rofi ~/.config/rofi
+ln -s ~/Minimal-Hyprland-Rice/mako ~/.config/mako
 ```
 
 ---
@@ -70,6 +63,8 @@ ln -s ~/Dotfiles/ghostty ~/.config/ghostty
 * Config-only
 * No generated files
 * No runtime data
+* No backups
+* No build artifacts
 
 ---
 
@@ -82,15 +77,13 @@ This repo is designed for:
 * Fast setup
 * Reproducible environments
 * Consistent dev workflow
-* Personal infrastructure
+* Personal Linux infrastructure
 
 ---
 
 ## 🧑‍💻 Author
 
 **Raul Santa Maria**
-Linux • Hyprland • Zed • Developer
-
----
+Linux • Hyprland • Wayland • Developer
 
 > "A good environment is not pretty — it is reproducible."
