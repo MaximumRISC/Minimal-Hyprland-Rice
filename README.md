@@ -84,6 +84,6 @@ This repo is designed for:
 ## 🧑‍💻 Author
 
 **Raul Santa Maria**
-Linux • Hyprland • Wayland • Developer
+Linux • Hyprland • Zed • Developer
 
 > "A good environment is not pretty — it is reproducible."
